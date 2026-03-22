@@ -1,6 +1,7 @@
 import React from 'react'
 import {View,Text, Button, StyleSheet} from 'react-native'
-import { useSelector, useDispatch } from '../redux/store';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState, AppDispatch } from '../redux/store';
 import { increment,decrement,incrementByAmount } from '../redux/counterSlice';
 
 const CounterScreen =() => {
